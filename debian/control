@@ -17,3 +17,14 @@ Description: Open Architecture Human-centered Robotics Platform version 3
   model and control program by dynamics simulation. In addition, OpenHRP3
   provides various software components and calculation libraries that can
   be used for robotics related software developments. 
+
+Package: libopenhrp-dev
+Section: libdevel
+Architecture: any
+Depends: openhrp, liblapack-dev, libblas-dev, libjpeg-dev, libpng-dev, libboost-signals-dev, libboost-regex-dev, libboost-program-options-dev, libboost-filesystem-dev, libcollada-dom2.4-dp-dev, libomniorb4-dev, uuid-dev, ${misc:Depends}
+Description: Open Architecture Human-centered Robotics Platform version 3
+  OpenHRP3 is an integrated software platform for robot simulations and
+  software developments. It allows the users to inspect an original robot
+  model and control program by dynamics simulation. In addition, OpenHRP3
+  provides various software components and calculation libraries that can
+  be used for robotics related software developments. 
