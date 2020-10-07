@@ -56,29 +56,13 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: packages-${{ matrix.dist }}-${{ matrix.arch }}
-    - name: Upload to multi-contact-head
+    - name: Upload to arntanguy ppa-head
       uses: jrl-umi3218/github-actions/upload-package@master
       with:
         dist: ${{ matrix.dist }}
         arch: ${{ matrix.arch }}
-        subject: gergondet
-        repo: multi-contact-head
-        package: |
-          name: openhrp3
-          desc: "OpenHRP3 is an integrated software platform for robot simulations"
-          licenses: [EPL-1.0]
-          vcs_url: http://www.openrtp.jp/openhrp3/en/index.html
-        version: 3.1.9
-        path: packages-${{ matrix.dist }}-${{ matrix.arch }}
-        BINTRAY_API_KEY: ${{ secrets.BINTRAY_API_KEY }}
-        GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-    - name: Upload to multi-contact-release
-      uses: jrl-umi3218/github-actions/upload-package@master
-      with:
-        dist: ${{ matrix.dist }}
-        arch: ${{ matrix.arch }}
-        subject: gergondet
-        repo: multi-contact-release
+        subject: arntanguy
+        repo: ppa-head
         package: |
           name: openhrp3
           desc: "OpenHRP3 is an integrated software platform for robot simulations"
