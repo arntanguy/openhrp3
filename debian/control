@@ -1,4 +1,4 @@
-Source: openhrp
+Source: openhrp-collada
 Section: science
 Priority: extra
 Maintainer: Fumio KANEHIRO <f-kanehiro@aist.go.jp>
@@ -8,7 +8,7 @@ Homepage: http://www.openrtp.jp/openhrp3/en/index.html
 #Vcs-Git: git://git.debian.org/collab-maint/openhrp3.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/openhrp3.git;a=summary
 
-Package: openhrp
+Package: openhrp-collada
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, liblapack-dev, libblas-dev, libjpeg-dev, libpng-dev, libboost-signals-dev, libboost-regex-dev, libboost-program-options-dev, libboost-filesystem-dev, libcollada-dom2.4-dp-dev
 Description: Open Architecture Human-centered Robotics Platform version 3
@@ -21,7 +21,7 @@ Description: Open Architecture Human-centered Robotics Platform version 3
 Package: libopenhrp-dev
 Section: libdevel
 Architecture: any
-Depends: openhrp, liblapack-dev, libblas-dev, libjpeg-dev, libpng-dev, libboost-signals-dev, libboost-regex-dev, libboost-program-options-dev, libboost-filesystem-dev, libcollada-dom2.4-dp-dev, libomniorb4-dev, uuid-dev, ${misc:Depends}
+Depends: openhrp-collada, liblapack-dev, libblas-dev, libjpeg-dev, libpng-dev, libboost-signals-dev, libboost-regex-dev, libboost-program-options-dev, libboost-filesystem-dev, libcollada-dom2.4-dp-dev, libomniorb4-dev, uuid-dev, ${misc:Depends}
 Description: Open Architecture Human-centered Robotics Platform version 3
   OpenHRP3 is an integrated software platform for robot simulations and
   software developments. It allows the users to inspect an original robot
